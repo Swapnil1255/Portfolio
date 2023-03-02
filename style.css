@@ -287,12 +287,11 @@ footer.a{
     
     .container{
         padding: 5px 8%;
-        margin:10px;
     }
     nav{
         margin-left: 0px;
         width: 100%;
-        padding-top: 14px;
+        padding-top: 0px;
         
     }
     nav ul li{
