@@ -11,7 +11,7 @@ body
 }
 #header{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: url(); 
     background-size: cover;
     background-position: center;
@@ -21,6 +21,7 @@ body
 }
 
 nav{
+
     overflow: hidden;
     position: fixed;
     display: flex;
@@ -166,7 +167,10 @@ nav ul li a:hover::after{
 }
 .tab-containt ul li span{
     color: rgb(204, 71, 216);
-    font-size: 30px;
+    font-size: 26px;
+}
+.tab-containt ul li h3{
+    font-size: 12px;
 }
 
 .tab-containt{
@@ -278,3 +282,131 @@ footer.a{
 
 /*-----------------------------------------small screen----------------------*/
 
+@media only screen and (max-width:500px)
+ {
+    
+    .container{
+        padding: 5px 8%;
+    }
+    nav{
+        margin-left: 0px;
+        width: 100%;
+        padding-top: 14px;
+        
+    }
+    nav ul li{
+        margin: 8px 8px;
+        
+    }
+
+    nav ul{
+        background-color: black;
+    }
+
+
+
+    .header-text {
+        flex-direction: column-reverse;
+    }
+    .header-text img {
+        width: 200px;
+        height: 200px;
+        margin: 13% 12%;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-left: 9px;
+        margin-right: 44px;
+    }
+
+    .header-text h1 span {
+        font-size: 70px;
+        /* color: rgb(74, 188, 233); */
+    }
+
+    .header-text a {
+        text-decoration: none;
+        color: rgb(241 242 242);
+        font-size: 17px;
+        padding: 3px;
+        background-color: rgb(91 14 157);
+        border-radius: 7px;
+    }
+
+    /*-----------about-------------*/
+
+    #about {
+        padding: 45px 0px;
+        color: aliceblue;
+        margin: -2%;
+    }
+    .about-col-1 img {
+        width: 100%;
+        height: 43vh;
+        border-radius: 208px;
+    }
+    .about-col-1 {
+        flex-basis: 100%;
+    }
+    .about-col-2 p {
+        font-size: 18px;
+    }
+
+        /*-------------services---------*/
+
+
+    #services {
+        padding: 0px 0px;
+    }
+
+    
+    .container center img {
+        width: 250px;
+        border-radius: 7%;
+        height: 250px;
+    }
+
+    .services-list {
+        gap: 0px;
+        margin-top: 0px;
+    }
+
+    .services-list div {
+        background-color: black;
+        padding: 18px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .services-list div h2 {
+        margin-bottom: 12px;
+    }
+    .services-list div a {
+        margin-top: 2px;
+    }
+
+
+    /*-------Conact----------*/
+    #contact {
+        padding: 0px 0px;
+    }
+
+    .logo {
+        margin-left: 0rem;
+    }
+    .logo img {
+        margin: 6px;
+        width: 40px;
+        height: 45px;
+    }
+    .contact iframe {
+        width: 60%;
+        height: 140px;
+        margin: 15px;
+    }
+    
+
+    
+    
+}
